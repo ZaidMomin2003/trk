@@ -10,7 +10,7 @@ export default function Header() {
       <div className="flex items-center gap-6">
         <Link href="/" className="flex items-center gap-2">
           <Logo />
-          <span className="sr-only">Trackazon</span>
+          <span className="sr-only">Swag Tracker</span>
         </Link>
         <Button variant="ghost" className="hidden items-center gap-2 text-left lg:flex">
           <MapPin className="h-5 w-5" />
@@ -26,7 +26,7 @@ export default function Header() {
           <div className="relative">
             <Input
               type="search"
-              placeholder="Search Trackazon"
+              placeholder="Search Swag Tracker"
               className="w-full rounded-lg bg-white text-black focus:ring-primary"
             />
             <Button

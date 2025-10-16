@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Header from "@/components/header";
 
 export const metadata: Metadata = {
-  title: "Trackazon",
+  title: "Swag Tracker",
   description: "An Amazon-like UI for monitoring shipment progress.",
 };
 
