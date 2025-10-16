@@ -162,15 +162,6 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
                     </Button>
                 </CardContent>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Need help?</CardTitle>
-              </CardHeader>
-              <CardContent className="grid gap-2 text-sm">
-                <Button variant="outline">View order details</Button>
-                <Button variant="outline">Contact us</Button>
-              </CardContent>
-            </Card>
         </div>
       </div>
     </div>
