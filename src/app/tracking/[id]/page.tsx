@@ -49,7 +49,7 @@ const getIconForStatus = (status: string) => {
   const lowerCaseStatus = status.toLowerCase();
   if (lowerCaseStatus.includes("delivered")) return <CheckCircle2 className="h-5 w-5 text-green-500" />;
   if (lowerCaseStatus.includes("out for delivery")) return <Truck className="h-5 w-5 text-primary" />;
-  if (lowerCaseStatus.includes("shipped") || lowerCaseStatus.includes("departed") || lowerCaseStatus.includes("in transit")) return <Truck className="h-5 w-5 text-muted-foreground" />;
+  if (lowerCaseStatus.includes("shipped") || lowerCaseStatus.includes("departed") || lowerCaseStatus.includes("in transit") || lowerCaseStatus.includes("pending")) return <Truck className="h-5 w-5 text-muted-foreground" />;
   if (lowerCaseStatus.includes("ordered") || lowerCaseStatus.includes("arrived")) return <Package className="h-5 w-5 text-muted-foreground" />;
   return <CircleDot className="h-5 w-5 text-muted-foreground" />;
 };
