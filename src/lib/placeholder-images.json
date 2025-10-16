@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "product-1",
+      "description": "A modern black headphone set.",
+      "imageUrl": "https://picsum.photos/seed/product1/200/200",
+      "imageHint": "headphones"
+    },
+    {
+      "id": "product-2",
+      "description": "A hardcover book with a colorful abstract cover.",
+      "imageUrl": "https://picsum.photos/seed/product2/200/200",
+      "imageHint": "book"
+    },
+    {
+      "id": "product-3",
+      "description": "A stainless steel electric kettle.",
+      "imageUrl": "https://picsum.photos/seed/product3/200/200",
+      "imageHint": "kettle"
+    },
+    {
+      "id": "product-4",
+      "description": "A smart watch with a black band.",
+      "imageUrl": "https://picsum.photos/seed/product4/200/200",
+      "imageHint": "smart watch"
+    }
+  ]
 }
