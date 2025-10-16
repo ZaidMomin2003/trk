@@ -16,13 +16,13 @@ import { cn } from "@/lib/utils";
 import type { Order } from "@/lib/types";
 import Link from "next/link";
 
-const getStatusInfo = (status: Order["status"]) => {
-  switch (status) {
+const getStatusInfo = (order: Order) => {
+  switch (order.status) {
     case "Delivered":
       return {
         progress: 100,
         color: "bg-green-500",
-        label: `Delivered on ${orders.find(o => o.status === "Delivered")?.estimatedDelivery}`,
+        label: `Delivered on ${order.estimatedDelivery}`,
       };
     case "Out for Delivery":
       return {
@@ -34,7 +34,7 @@ const getStatusInfo = (status: Order["status"]) => {
       return {
         progress: 50,
         color: "bg-primary",
-        label: `Arriving ${orders.find(o => o.status === "Shipped")?.estimatedDelivery}`,
+        label: `Arriving ${order.estimatedDelivery}`,
       };
     case "Ordered":
       return {
@@ -62,7 +62,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
     notFound();
   }
 
-  const statusInfo = getStatusInfo(order.status);
+  const statusInfo = getStatusInfo(order);
 
   return (
     <div className="grid gap-6">

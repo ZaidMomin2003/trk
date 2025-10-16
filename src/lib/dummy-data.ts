@@ -15,11 +15,11 @@ export const orders: Order[] = [
     trackingNumber: 'Zaidaws@123456',
     productName: 'GenAI LLM Chip',
     productImage: productImages.product5,
-    estimatedDelivery: 'October 17, 2025',
+    estimatedDelivery: 'October 26, 2025',
     status: 'Shipped',
     shippedTo: 'Arshad, Muddebihal, Bijapur, Karnataka',
     trackingHistory: [
-      { date: 'October 10, 2025', time: '09:00 AM', status: 'In Transit', location: 'Delhi, India' },
+      { date: 'October 10, 2025', time: '09:00 AM', status: 'Pending', location: 'Delhi, India' },
       { date: 'October 9, 2025', time: '04:00 PM', status: 'Package is being prepared', location: 'Delhi, India' },
       { date: 'October 9, 2025', time: '10:00 AM', status: 'Ordered', location: 'Muddebihal, Bijapur, Karnataka' },
     ],
