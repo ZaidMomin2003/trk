@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, ShoppingCart, Bell, User, MapPin } from "lucide-react";
+import { Search, MapPin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/logo";
@@ -38,21 +38,6 @@ export default function Header() {
             </Button>
           </div>
         </form>
-      </div>
-
-      <div className="flex items-center gap-2 md:gap-4">
-        <Button variant="ghost" size="icon">
-          <Bell className="h-6 w-6" />
-          <span className="sr-only">Notifications</span>
-        </Button>
-        <Button variant="ghost" size="icon">
-          <ShoppingCart className="h-6 w-6" />
-          <span className="sr-only">Cart</span>
-        </Button>
-        <Button variant="ghost" size="icon">
-          <User className="h-6 w-6" />
-          <span className="sr-only">Account</span>
-        </Button>
       </div>
     </header>
   );
