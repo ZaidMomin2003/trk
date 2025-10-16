@@ -72,7 +72,7 @@ export default function Home() {
                 onChange={(e) => setTrackingNumber(e.target.value)}
               />
               <Button type="submit" className="bg-primary hover:bg-accent">
-                Add Order
+                Check Track
               </Button>
             </div>
           </form>
