@@ -10,7 +10,7 @@ export type ProductCategory = {
 
 export const productList: ProductCategory[] = [
   {
-    category: "💻 Hardware",
+    category: "Hardware",
     items: [
       { name: "Apple MacBook Pro (16-inch, M3 Max, 48GB RAM, 1TB SSD)", description: "High-performance laptop for model development and compute-heavy LLM fine-tuning." },
       { name: "Dell UltraSharp 27\" 4K Monitor (U2723QE)", description: "4K USB-C professional display for multitasking and data visualization." },
@@ -27,7 +27,7 @@ export const productList: ProductCategory[] = [
     ],
   },
   {
-    category: "🧠 Software Access & Licenses",
+    category: "Software Access & Licenses",
     items: [
       { name: "AWS SageMaker Studio (Enterprise License)", description: "End-to-end ML development, training, and deployment environment." },
       { name: "AWS Bedrock Access", description: "Managed service for foundational LLMs and prompt orchestration." },
@@ -46,7 +46,7 @@ export const productList: ProductCategory[] = [
     ],
   },
   {
-    category: "☕ AWS Swag & Welcome Kit",
+    category: "AWS Swag & Welcome Kit",
     items: [
       { name: "AWS Hoodie (Black Zip-up)", description: "Premium cotton hoodie with embroidered AWS logo." },
       { name: "AWS T-Shirt (AI/ML Edition)", description: "Crew-neck T-shirt featuring “Build On AWS” branding." },
@@ -58,7 +58,7 @@ export const productList: ProductCategory[] = [
     ],
   },
   {
-    category: "🌐 Connectivity & Utility Support",
+    category: "Connectivity & Utility Support",
     items: [
       { name: "Wi-Fi Reimbursement (₹2,000–₹3,000/month)", description: "For home broadband connection (Airtel / Jio Fiber)." },
       { name: "AWS Global VPN Access", description: "Secure internal network access for infrastructure and data services." },
