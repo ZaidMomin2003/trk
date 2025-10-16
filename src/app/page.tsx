@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { orders } from "@/lib/dummy-data";
 import {
   Card,
@@ -15,6 +19,9 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
+  const router = useRouter();
+  const [trackingNumber, setTrackingNumber] = useState("");
+
   const getStatusVariant = (
     status: "Delivered" | "Out for Delivery" | "Shipped" | "Ordered"
   ): "default" | "secondary" | "outline" => {
@@ -30,6 +37,21 @@ export default function Home() {
     }
   };
 
+  const handleTrackOrder = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (trackingNumber === "Zaidaws@123456") {
+      router.push("/tracking/Arshad-LLM-2025-2568634512");
+    } else {
+      // Optional: handle other tracking numbers or show an error
+      const order = orders.find((o) => o.trackingNumber.toLowerCase() === trackingNumber.toLowerCase());
+      if (order) {
+        router.push(`/tracking/${order.id}`);
+      } else {
+        alert("Invalid tracking number");
+      }
+    }
+  };
+
   return (
     <div className="flex flex-col gap-8">
       <Card>
@@ -40,12 +62,14 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form>
+          <form onSubmit={handleTrackOrder}>
             <div className="flex w-full items-center space-x-2">
               <Input
                 type="text"
                 placeholder="Enter tracking number"
                 className="flex-1"
+                value={trackingNumber}
+                onChange={(e) => setTrackingNumber(e.target.value)}
               />
               <Button type="submit" className="bg-primary hover:bg-accent">
                 Add Order

@@ -6,9 +6,23 @@ const productImages = {
   product2: PlaceHolderImages.find((img) => img.id === 'product-2')?.imageUrl ?? '',
   product3: PlaceHolderImages.find((img) => img.id === 'product-3')?.imageUrl ?? '',
   product4: PlaceHolderImages.find((img) => img.id === 'product-4')?.imageUrl ?? '',
+  product5: PlaceHolderImages.find((img) => img.id === 'product-5')?.imageUrl ?? '',
 }
 
 export const orders: Order[] = [
+  {
+    id: 'Arshad-LLM-2025-2568634512',
+    trackingNumber: 'Zaidaws@123456',
+    productName: 'GenAI LLM Chip',
+    productImage: productImages.product5,
+    estimatedDelivery: 'Tomorrow',
+    status: 'Shipped',
+    shippedTo: 'Arshad',
+    trackingHistory: [
+      { date: 'June 3, 2024', time: '11:00 PM', status: 'Shipped', location: 'Mountain View, CA' },
+      { date: 'June 3, 2024', time: '01:00 PM', status: 'Ordered', location: 'Mountain View, CA' },
+    ],
+  },
   {
     id: '112-1234567-1234567',
     trackingNumber: 'TBA123456789012',

@@ -23,6 +23,12 @@
       "description": "A smart watch with a black band.",
       "imageUrl": "https://picsum.photos/seed/product4/200/200",
       "imageHint": "smart watch"
+    },
+    {
+      "id": "product-5",
+      "description": "A futuristic AI chip.",
+      "imageUrl": "https://picsum.photos/seed/product5/200/200",
+      "imageHint": "AI chip"
     }
   ]
 }
