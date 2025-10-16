@@ -16,7 +16,7 @@ export default function Header() {
           <MapPin className="h-5 w-5" />
           <div>
             <p className="text-xs">Deliver to</p>
-            <p className="font-bold">Muddebihal, 586 212, Karnataka</p>
+            <p className="font-bold">Muddebihal, 586 212</p>
           </div>
         </Button>
       </div>
