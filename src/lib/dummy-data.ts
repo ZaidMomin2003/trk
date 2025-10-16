@@ -13,7 +13,7 @@ export const orders: Order[] = [
   {
     id: 'Arshad-LLM-2025-2568634512',
     trackingNumber: 'Zaidaws@123456',
-    productName: 'GenAI LLM Chip',
+    productName: 'AWS SWAG Builder Kit',
     productImage: productImages.product5,
     estimatedDelivery: 'October 26, 2025',
     status: 'Shipped',
