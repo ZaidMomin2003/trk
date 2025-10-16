@@ -155,7 +155,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
                 </CardContent>
                 <CardContent className="grid grid-cols-2 gap-2 p-4 pt-0">
                     <Button variant="outline" asChild>
-                        <Link href="#">View your item</Link>
+                        <Link href="/products">View your item</Link>
                     </Button>
                     <Button className="bg-primary hover:bg-accent" asChild>
                         <Link href="#">under process</Link>
