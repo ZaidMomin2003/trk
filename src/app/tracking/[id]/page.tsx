@@ -85,7 +85,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
           </div>
         </CardHeader>
         <CardContent>
-          <Progress value={statusInfo.progress} className={cn("h-3", statusInfo.color)} />
+          <Progress value={statusInfo.progress} />
           <div className="mt-2 flex justify-between text-xs text-muted-foreground">
             <span>Ordered</span>
             <span>Shipped</span>
