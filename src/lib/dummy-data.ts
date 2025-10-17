@@ -14,7 +14,7 @@ export const orders: Order[] = [
     id: 'Arshad-LLM-2025-2568634512',
     trackingNumber: 'Zaidaws@123456',
     productName: 'AWS SWAG Builder Kit',
-    productImage: productImages.product5,
+    productImage: 'aws.jpeg',
     estimatedDelivery: 'October 26, 2025',
     status: 'Shipped',
     shippedTo: 'Arshad, Muddebihal, Bijapur, Karnataka',
