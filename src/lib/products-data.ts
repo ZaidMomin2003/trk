@@ -23,7 +23,6 @@ export const productList: ProductCategory[] = [
       { name: "AWS-branded Targus Laptop Backpack", description: "Premium protective backpack for laptop and accessories." },
       { name: "Apple 140W USB-C Power Adapter + Cable", description: "Official high-wattage charger for MacBook Pro." },
       { name: "Belkin 6-Socket Surge Protector", description: "Power surge protection for home/office setup." },
-      { name: "APC Back-UPS 650VA (Optional)", description: "Battery backup for safe shutdown during power loss." },
     ],
   },
   {
