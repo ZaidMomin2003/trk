@@ -150,7 +150,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
                 <CardContent className="p-4">
                     <h3 className="font-semibold">{order.productName}</h3>
                     <p className="text-sm text-muted-foreground">
-                       This is a no-op UI clone.
+                       This kit includes high-performance hardware, software licenses, and exclusive AWS swag.
                     </p>
                 </CardContent>
                 <CardContent className="grid grid-cols-2 gap-2 p-4 pt-0">
