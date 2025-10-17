@@ -19,9 +19,24 @@ const Logo = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
         fontSize="24"
         fontWeight="bold"
         letterSpacing="0em"
+        className="hidden sm:inline"
       >
         <tspan x="0" y="27.48">
           swag tracker
+        </tspan>
+      </text>
+       <text
+        fill="currentColor"
+        xmlSpace="preserve"
+        style={{ whiteSpace: "pre" }}
+        fontFamily="Inter"
+        fontSize="24"
+        fontWeight="bold"
+        letterSpacing="0em"
+        className="sm:hidden"
+      >
+        <tspan x="0" y="27.48">
+          ST
         </tspan>
       </text>
       <path
@@ -30,6 +45,7 @@ const Logo = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
         strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"
+        className="hidden sm:inline"
       />
       <path
         d="M136 33.5L142.5 30.5L136 27.5"
@@ -37,6 +53,7 @@ const Logo = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
         strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"
+        className="hidden sm:inline"
       />
     </g>
     <defs>

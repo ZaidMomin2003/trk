@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -30,7 +31,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <div className="flex min-h-screen w-full flex-col">
           <Header />
-          <main className="flex-1 p-4 md:p-6 lg:p-8">
+          <main className="flex-1 p-4 md:p-6">
             <div className="mx-auto w-full max-w-6xl">
               {children}
             </div>

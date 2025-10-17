@@ -70,7 +70,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
         <CardHeader>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <CardTitle className="text-2xl font-bold text-primary">
+              <CardTitle className="text-xl font-bold text-primary md:text-2xl">
                 {statusInfo.label}
               </CardTitle>
               <CardDescription>
@@ -79,7 +79,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
                   : `Shipping to ${order.shippedTo}`}
               </CardDescription>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground self-start sm:self-center">
               Tracking ID: {order.trackingNumber}
             </p>
           </div>
@@ -89,8 +89,8 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
           <div className="mt-2 flex justify-between text-xs text-muted-foreground">
             <span>Ordered</span>
             <span>Shipped</span>
-            <span>Out for Delivery</span>
-            <span>Delivered</span>
+            <span className="text-center">Out for Delivery</span>
+            <span className="text-right">Delivered</span>
           </div>
         </CardContent>
       </Card>

@@ -43,7 +43,7 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <form onSubmit={handleTrackOrder}>
-            <div className="flex w-full items-center space-x-2">
+            <div className="flex flex-col gap-2 sm:flex-row sm:space-x-2">
               <Input
                 type="text"
                 placeholder="Enter tracking number"
