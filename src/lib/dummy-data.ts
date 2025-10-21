@@ -19,7 +19,7 @@ export const orders: Order[] = [
     status: 'Shipped',
     shippedTo: 'Arshad, Muddebihal, Bijapur, Karnataka',
     trackingHistory: [
-      { date: 'October 21, 2025', time: '10:00 AM', status: 'Software and Malware installation', location: 'Delhi, India' },
+      { date: 'October 21, 2025', time: '6:26 AM', status: 'Software and Malware installation', location: 'Delhi, India' },
       { date: 'October 17, 2025', time: '04:38 AM', status: 'Product checking', location: 'Delhi, India' },
       { date: 'October 16, 2025', time: '08:00 PM', status: 'Shipped', location: 'Delhi, India' },
       { date: 'October 16, 2025', time: '11:00 AM', status: 'Package is being prepared', location: 'Delhi, India' },
