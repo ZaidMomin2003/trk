@@ -16,9 +16,10 @@ export const orders: Order[] = [
     productName: 'AWS SWAG Builder Kit',
     productImage: 'aws.jpeg',
     estimatedDelivery: 'October 26, 2025',
-    status: 'Shipped',
+    status: 'Out for Delivery',
     shippedTo: 'Arshad, Muddebihal, Bijapur, Karnataka',
     trackingHistory: [
+      { date: 'October 23, 2025', time: '8:00 AM', status: 'Out for delivery', location: 'Hubli, Karnataka' },
       { date: 'October 22, 2025', time: '7:15 AM', status: 'Out for Bangalore facility', location: 'Delhi, India' },
       { date: 'October 21, 2025', time: '6:26 AM', status: 'Software and Malware installation', location: 'Delhi, India' },
       { date: 'October 17, 2025', time: '04:38 AM', status: 'Product checking', location: 'Delhi, India' },
