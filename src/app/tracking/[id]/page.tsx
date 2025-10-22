@@ -1,3 +1,4 @@
+
 import { orders } from "@/lib/dummy-data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -139,7 +140,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
            <Card className="overflow-hidden">
                 <CardHeader className="p-0">
                     <Image
-                        src={order.productImage.startsWith('https') ? order.productImage : `/${order.productImage}`}
+                        src={order.productImage}
                         alt={order.productName}
                         width={400}
                         height={400}
