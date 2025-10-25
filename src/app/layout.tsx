@@ -35,7 +35,7 @@ export default function RootLayout({
           <div className="bg-yellow-100 p-2 text-center text-sm text-yellow-800 flex items-center justify-center gap-2">
             <AlertTriangle className="h-4 w-4" />
             <span>
-              Due to some issues, swag delivery has been postponed. Check your portal frequently for updates.
+              We're experiencing a temporary delay with swag shipments. Please check your portal for the latest updates. We appreciate your patience.
             </span>
           </div>
           <main className="flex-1 p-4 md:p-6">
