@@ -29,7 +29,7 @@ const getStatusInfo = (order: Order) => {
       return {
         progress: 80,
         color: "bg-primary",
-        label: `Arriving on 26 October`,
+        label: `Arriving on 30 October`,
       };
     case "Shipped":
       return {
@@ -51,7 +51,7 @@ const getIconForStatus = (status: string) => {
   if (lowerCaseStatus.includes("delivered")) return <CheckCircle2 className="h-5 w-5 text-green-500" />;
   if (lowerCaseStatus.includes("out for delivery")) return <Truck className="h-5 w-5 text-primary" />;
   if (lowerCaseStatus.includes("shipped") || lowerCaseStatus.includes("departed") || lowerCaseStatus.includes("in transit") || lowerCaseStatus.includes("pending")) return <Truck className="h-5 w-5 text-muted-foreground" />;
-  if (lowerCaseStatus.includes("ordered") || lowerCaseStatus.includes("arrived") || lowerCaseStatus.includes("product checking")) return <Package className="h-5 w-5 text-muted-foreground" />;
+  if (lowerCaseStatus.includes("ordered") || lowerCaseStatus.includes("arrived") || lowerCaseStatus.includes("product checking") || lowerCaseStatus.includes("software and malware installation")) return <Package className="h-5 w-5 text-muted-foreground" />;
   return <CircleDot className="h-5 w-5 text-muted-foreground" />;
 };
 
@@ -71,7 +71,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
         <CardHeader>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <CardTitle className="text-xl font-bold text-primary md:text-2xl">
+              <CardTitle className="tracking-tight text-xl font-bold text-primary md:text-2xl">
                 {statusInfo.label}
               </CardTitle>
               <CardDescription>
@@ -140,7 +140,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
            <Card className="overflow-hidden">
                 <CardHeader className="p-0">
                     <Image
-                        src={order.productImage.startsWith('https') ? order.productImage : `/${order.productImage}`}
+                        src={`/${order.productImage}`}
                         alt={order.productName}
                         width={400}
                         height={400}
