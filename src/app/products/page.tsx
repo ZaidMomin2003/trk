@@ -8,6 +8,7 @@ import {
 import { productList } from "@/lib/products-data";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
 
 export default function ProductsPage() {
   return (
@@ -25,15 +26,29 @@ export default function ProductsPage() {
               <h2 className="mb-4 text-xl font-bold">{category.category}</h2>
               <div className="grid gap-4">
                 {category.items.map((item) => (
-                  <div key={item.name} className="flex flex-col gap-2 rounded-lg border p-4 sm:flex-row sm:items-center sm:justify-between">
-                    <div className="flex flex-col gap-1">
-                      <p className="font-semibold">{item.name}</p>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
-                      {item.price && <p className="text-sm font-bold">{item.price}</p>}
+                  <div
+                    key={item.name}
+                    className="flex flex-col gap-2 rounded-lg border p-4 sm:flex-row sm:items-center sm:justify-between"
+                  >
+                    <div className="flex items-start gap-4">
+                      {category.category === "Software Access & Licenses" && (
+                        <CheckCircle className="h-5 w-5 text-green-500 mt-1" />
+                      )}
+                      <div className="flex flex-col gap-1">
+                        <p className="font-semibold">{item.name}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {item.description}
+                        </p>
+                        {item.price && (
+                          <p className="text-sm font-bold">{item.price}</p>
+                        )}
+                      </div>
                     </div>
                     {item.amazonLink && (
-                      <Button asChild className="mt-2 sm:mt-0">
-                        <Link href={item.amazonLink} target="_blank">View Product</Link>
+                      <Button asChild className="mt-2 sm:mt-0 sm:ml-4 flex-shrink-0">
+                        <Link href={item.amazonLink} target="_blank">
+                          View Product
+                        </Link>
                       </Button>
                     )}
                   </div>
