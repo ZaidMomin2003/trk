@@ -32,7 +32,10 @@ export default function ProductsPage() {
                   >
                     <div className="flex items-start gap-4">
                       {category.category === "Software Access & Licenses" && (
-                        <CheckCircle className="h-5 w-5 text-green-500 mt-1" />
+                        <div className="flex items-center gap-2 text-green-500 mt-1">
+                          <CheckCircle className="h-5 w-5" />
+                          <span className="text-sm font-semibold">Delivered</span>
+                        </div>
                       )}
                       <div className="flex flex-col gap-1">
                         <p className="font-semibold">{item.name}</p>
