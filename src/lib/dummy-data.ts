@@ -19,6 +19,7 @@ export const orders: Order[] = [
     status: 'Out for Delivery',
     shippedTo: 'Arshad, Muddebihal, Bijapur, Karnataka',
     trackingHistory: [
+      { date: 'October 29, 2025', time: '11:58 AM', status: 'Shipped', location: 'Bangalore, India' },
       { date: 'October 28, 2025', time: '1:50 PM', status: 'Shipping hardware from Bangalore', location: 'Bangalore, India' },
       { date: 'October 27, 2025', time: '10:18 AM', status: 'Software access and licences delivered', location: 'Digital Delivery' },
       { date: 'October 25, 2025', time: '9:50 AM', status: 'Reached Bangalore facility', location: 'Bangalore, India' },
