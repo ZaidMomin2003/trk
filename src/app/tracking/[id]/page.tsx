@@ -29,7 +29,7 @@ const getStatusInfo = (order: Order) => {
       return {
         progress: 80,
         color: "bg-primary",
-        label: `Arriving on 30 October`,
+        label: `Arriving on 12 December`,
       };
     case "Shipped":
       return {
@@ -140,7 +140,7 @@ export default function TrackingPage({ params }: { params: { id: string } }) {
            <Card className="overflow-hidden">
                 <CardHeader className="p-0">
                     <Image
-                        src={`/${order.productImage}`}
+                        src={order.productImage.startsWith('https') ? order.productImage : `/${order.productImage}`}
                         alt={order.productName}
                         width={400}
                         height={400}
